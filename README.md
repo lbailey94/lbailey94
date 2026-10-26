@@ -30,7 +30,7 @@ Continuity Receipt does not require WhiteMagic.
 | Want to… | Start at |
 | --- | --- |
 | **Use it** — memory and continuity for your coding agent | [`whitemagic`](https://github.com/lbailey94/whitemagic) |
-| **Review a protocol** — spec, vectors, two independent verifiers | [`continuity-receipt`](https://github.com/lbailey94/continuity-receipt) |
+| **Review a protocol** — spec, vectors, three independent verifiers (Python, Rust, TypeScript) | [`continuity-receipt`](https://github.com/lbailey94/continuity-receipt) |
 | **Attack the architecture** — containment review snapshot | [`mandalaos-gate-lite`](https://github.com/lbailey94/mandalaos-gate-lite) |
 
 Working notes and docs: [whitemagic.dev](https://whitemagic.dev)
