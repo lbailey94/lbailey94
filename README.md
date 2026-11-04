@@ -3,7 +3,7 @@
 > Local memory → governed execution → verifiable continuity
 
 I build infrastructure for AI agents that can **remember what happened**, know
-**what they were authorized to do**, prove **what they actually did**, and show
+**what they were authorized to do**, emit signed records of **what they report doing**, and show
 **when their authority ended** — with evidence that stays local, portable, and
 independently verifiable.
 
@@ -30,7 +30,14 @@ Continuity Receipt does not require WhiteMagic.
 | Want to… | Start at |
 | --- | --- |
 | **Use it** — memory and continuity for your coding agent | [`whitemagic`](https://github.com/lbailey94/whitemagic) |
-| **Review a protocol** — spec, vectors, three independent verifiers (Python, Rust, TypeScript) | [`continuity-receipt`](https://github.com/lbailey94/continuity-receipt) |
+| **Review a protocol** — spec, vectors, three verifier implementations (Python, Rust, TypeScript) | [`continuity-receipt`](https://github.com/lbailey94/continuity-receipt) |
 | **Attack the architecture** — containment review snapshot | [`mandalaos-gate-lite`](https://github.com/lbailey94/mandalaos-gate-lite) |
 
 Working notes and docs: [whitemagic.dev](https://whitemagic.dev)
+
+[Stable Gen2 9.3.4](https://github.com/lbailey94/whitemagic/releases/tag/v9.3.4)
+remains the default installation line; newer prereleases are an explicit preview.
+Start with the [setup guide](https://www.whitemagic.dev/install) or the
+[receipt consumer quickstart](https://github.com/lbailey94/continuity-receipt#readme).
+Signatures bind signed bytes; source truth, real-world authority, completeness and
+successful execution require the consumer's own policy and evidence.
