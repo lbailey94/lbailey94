@@ -35,8 +35,13 @@ Continuity Receipt does not require WhiteMagic.
 
 Working notes and docs: [whitemagic.dev](https://whitemagic.dev)
 
-[Stable Gen2 9.3.4](https://github.com/lbailey94/whitemagic/releases/tag/v9.3.4)
-remains the default installation line; newer prereleases are an explicit preview.
+The current open-alpha release is
+[v11.2.1](https://github.com/lbailey94/whitemagic/releases/tag/v11.2.1)
+(GitHub release, npm `latest`, and the website installer on Linux x86-64,
+Linux arm64, and macOS arm64).
+[Gen2 9.3.4](https://github.com/lbailey94/whitemagic/releases/tag/v9.3.4)
+remains the qualified line for Homebrew, Scoop, winget, the client plugins,
+Windows x86_64, and Intel macOS.
 Start with the [setup guide](https://www.whitemagic.dev/install) or the
 [receipt consumer quickstart](https://github.com/lbailey94/continuity-receipt#readme).
 Signatures bind signed bytes; source truth, real-world authority, completeness and
