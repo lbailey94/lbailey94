@@ -13,10 +13,13 @@ independently verifiable.
 whitemagic            local-first memory & session continuity   (MCP, Rust, MIT)
       │
       ▼
+whitemagic-crystal    client-side encrypted memory & anchors    (AES-256-GCM / Ed25519, MIT)
+      │
+      ▼
 continuity-receipt    portable, offline-verifiable evidence      (open spec, Apache-2.0)
       │
       ▼
-mandalaos-gate-lite   bounded agent execution that emits receipts (review snapshot)
+mandala               bounded agent execution & Landlock kernel  (Bubblewrap / Landlock, MIT/Apache-2.0)
       │
       ▼
 whitemagic-plugins    client integrations & adapters
@@ -30,8 +33,9 @@ Continuity Receipt does not require WhiteMagic.
 | Want to… | Start at |
 | --- | --- |
 | **Use it** — memory and continuity for your coding agent | [`whitemagic`](https://github.com/lbailey94/whitemagic) |
-| **Review a protocol** — spec, vectors, three verifier implementations (Python, Rust, TypeScript) | [`continuity-receipt`](https://github.com/lbailey94/continuity-receipt) |
-| **Attack the architecture** — containment review snapshot | [`mandalaos-gate-lite`](https://github.com/lbailey94/mandalaos-gate-lite) |
+| **Review a protocol** — spec, 80 vectors, three verifier implementations (Python, Rust, TypeScript) | [`continuity-receipt`](https://github.com/lbailey94/continuity-receipt) |
+| **Attack the architecture** — containment review snapshot & governed execution | [`mandala`](https://github.com/lbailey94/mandala) · [`mandalaos-gate-lite`](https://github.com/lbailey94/mandalaos-gate-lite) |
+| **Verify memory integrity** — client-side encrypted crystals & off-store commitments | [`whitemagic-crystal`](https://github.com/lbailey94/whitemagic-crystal) · [AGMI scorecard (`10/10`)](https://agentmemoryintegrity.org/stores/whitemagic-crystals.html) |
 
 Working notes and docs: [whitemagic.dev](https://whitemagic.dev)
 
@@ -40,7 +44,7 @@ The current open-alpha release is
 (GitHub release, npm `latest`, and the website installer on Linux x86-64,
 Linux arm64, and macOS arm64).
 [Gen2 9.3.4](https://github.com/lbailey94/whitemagic/releases/tag/v9.3.4)
-remains the qualified line for Homebrew, Scoop, winget, the client plugins,
+remains the qualified line for Homebrew, Scoop, winget, the Gemini CLI extension,
 Windows x86_64, and Intel macOS.
 Start with the [setup guide](https://www.whitemagic.dev/install) or the
 [receipt consumer quickstart](https://github.com/lbailey94/continuity-receipt#readme).
